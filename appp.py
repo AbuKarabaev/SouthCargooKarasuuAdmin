@@ -144,8 +144,8 @@ def complete_registration(message):
 
         cursor.execute('SELECT COUNT(*) FROM users')
         user_count = cursor.fetchone()[0]
-        START_CODE = 1
-        user_code = f"A{START_CODE + user_count}"
+        START_CODE = 115
+        user_code = f"T{START_CODE + user_count}"
         registration_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
         cursor.execute('INSERT INTO users (user_id, name, phone, code, registration_date) VALUES (?, ?, ?, ?, ?)',
