@@ -4,9 +4,9 @@ import sqlite3
 import re
 from datetime import datetime
 
-API_TOKEN = '77667199533:AAGHGd6zW6UBb56CKfb4UT7eaQEbW5jtEz0'
+API_TOKEN = '7667199533:AAGHGd6zW6UBb56CKfb4UT7eaQEbW5jtEz0'
 ADMIN_BOT_API_TOKEN = '7653522845:AAGEkDMxIIE3NfNi1YByWgGaBe0Bwt08Z4k'
-ADMIN_BOT_CHAT_ID = '6903472998'
+ADMIN_BOT_CHAT_ID = ' 6563851448'
 
 # Создание объектов бота
 bot = telebot.TeleBot(API_TOKEN)
