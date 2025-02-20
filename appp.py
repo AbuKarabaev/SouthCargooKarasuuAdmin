@@ -6,7 +6,7 @@ from datetime import datetime
 
 API_TOKEN = '7667199533:AAGHGd6zW6UBb56CKfb4UT7eaQEbW5jtEz0'
 ADMIN_BOT_API_TOKEN = '7653522845:AAGEkDMxIIE3NfNi1YByWgGaBe0Bwt08Z4k'
-ADMIN_BOT_CHAT_ID = ' 6563851448'
+ADMIN_BOT_CHAT_ID = '6563851448'
 
 # Создание объектов бота
 bot = telebot.TeleBot(API_TOKEN)
@@ -144,7 +144,7 @@ def complete_registration(message):
 
         cursor.execute('SELECT COUNT(*) FROM users')
         user_count = cursor.fetchone()[0]
-        START_CODE = 150
+        START_CODE = 160
         user_code = f"T{START_CODE + user_count}"
         registration_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
