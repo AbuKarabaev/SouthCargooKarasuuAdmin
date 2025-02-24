@@ -235,6 +235,7 @@ def send_channel_links(message):
             "1. [Telegram канал](https://t.me/+N1Xktz9wb55jZjRi)\n"
             "2. [Отзывы](https://web.telegram.org/k/#-2069386995)\n\n"
             "Для связи: [Личка](https://t.me/Seocargo)",
+            "Для связи: [Личка](https://wa.me/message/ADWEXABNRF74I1)",
             parse_mode="Markdown"
         )
     except Exception as e:
@@ -243,16 +244,10 @@ def send_channel_links(message):
 @bot.message_handler(func=lambda message: message.text == 'Адрес в Кыргызстане')
 def send_address_kg(message):
     try:
-        bot.send_message(message.chat.id, "Адрес: г. Ош, пр. Масалиева 44")
+        bot.send_message(message.chat.id, "Адрес:Город Карасуу рынок Туратали ТЦ "'Танбийке')
 
-        google_maps_url = "https://maps.app.goo.gl/TDL61Viw1Rjjd9197"
-        bot.send_message(
-            message.chat.id,
-            f"Посмотреть карту: [Google Maps]({google_maps_url})",
-            parse_mode="Markdown"
-        )
 
-        video_path = 'mds.mp4'
+        video_path = 'mdss.mp4'
         try:
             with open(video_path, 'rb') as video:
                 bot.send_video(message.chat.id, video)
