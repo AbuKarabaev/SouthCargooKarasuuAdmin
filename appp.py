@@ -224,7 +224,6 @@ def account_info(message):
     except Exception as e:
         log_event(f"Ошибка при получении информации об аккаунте: {e}")
 
-# Обработка кнопки "Канал"
 @bot.message_handler(func=lambda message: message.text == 'Канал')
 def send_channel_links(message):
     try:
@@ -232,15 +231,16 @@ def send_channel_links(message):
             message.chat.id,
             "Ссылки на наши каналы:\n"
             "1. [Telegram канал](https://t.me/+nqHmpeIePJFlYjNi)\n"
-            "1. [Telegram канал](https://t.me/+N1Xktz9wb55jZjRi)\n"
-            "2. [Отзывы](https://web.telegram.org/k/#-2069386995)\n"
-            "Для связи: [Личка](https://t.me/Seocargo)\n",
-            "Для связи: [Личка](https://wa.me/message/ADWEXABNRF74I1)\n",
-            parse_mode="Markdown"
+            "2. [Telegram канал](https://t.me/+N1Xktz9wb55jZjRi)\n"
+            "3. [Отзывы](https://t.me/+2069386995)\n"  # Исправленная ссылка
+            "Для связи:\n"
+            "- [Telegram](https://t.me/Seocargo)\n"
+            "- [WhatsApp](https://wa.me/message/ADWEXABNRF74I1)",
+            parse_mode="Markdown",
+            disable_web_page_preview=True
         )
     except Exception as e:
         log_event(f"Ошибка при отправке ссылок на каналы: {e}")
-
 @bot.message_handler(func=lambda message: message.text == 'Адрес в Кыргызстане')
 def send_address_kg(message):
     try:
