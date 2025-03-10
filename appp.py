@@ -231,10 +231,11 @@ def send_channel_links(message):
         bot.send_message(
             message.chat.id,
             "Ссылки на наши каналы:\n"
+            "1. [Telegram канал](https://t.me/+nqHmpeIePJFlYjNi)\n"
             "1. [Telegram канал](https://t.me/+N1Xktz9wb55jZjRi)\n"
-            "2. [Отзывы](https://web.telegram.org/k/#-2069386995)\n\n"
-            "Для связи: [Личка](https://t.me/Seocargo)",
-            "Для связи: [Личка](https://wa.me/message/ADWEXABNRF74I1)",
+            "2. [Отзывы](https://web.telegram.org/k/#-2069386995)\n"
+            "Для связи: [Личка](https://t.me/Seocargo)\n",
+            "Для связи: [Личка](https://wa.me/message/ADWEXABNRF74I1)\n",
             parse_mode="Markdown"
         )
     except Exception as e:
