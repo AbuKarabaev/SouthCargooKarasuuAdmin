@@ -144,7 +144,7 @@ def complete_registration(message):
 
         cursor.execute('SELECT COUNT(*) FROM users')
         user_count = cursor.fetchone()[0]
-        START_CODE = 173
+        START_CODE = 216
         user_code = f"T{START_CODE + user_count}"
         registration_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
