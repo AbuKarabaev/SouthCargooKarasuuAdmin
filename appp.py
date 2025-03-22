@@ -159,9 +159,9 @@ def complete_registration(message):
         bot.send_message(message.chat.id, f"Ваш уникальный код: {user_code}")
 
         address_message = (
-            "广东省佛山市南海区里水镇环镇南路33号1号仓315库B9501"
-            "收货人 梅先生-B9501\n"
-            "13250150777\n"
+            "广东省佛山市南海区里水镇和顺鹤峰1号仓315库B9501\n"
+            "收货人 梅先生\n"
+            "13250150777"
         )
         bot.send_message(message.chat.id, address_message)
 
